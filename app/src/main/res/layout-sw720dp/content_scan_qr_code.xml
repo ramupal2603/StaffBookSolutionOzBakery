@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.qrCodeScannerView.QrCodeScannerViewActivity"
+    tools:ignore="MissingDefaultResource"
+    tools:showIn="@layout/activity_scan_qr_code">
+
+
+    <include layout="@layout/action_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="0.80">
+
+                <com.budiyev.android.codescanner.CodeScannerView
+                    android:id="@+id/scannerView"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_gravity="center"
+                    app:autoFocusButtonVisible="false"
+                    app:flashButtonVisible="false"
+                    app:frameColor="@color/scannerCornerColor"
+                    app:frameCornersCapRounded="true"
+                    app:frameCornersRadius="@dimen/_5sdp"
+                    app:frameSize="0.95"
+                    app:frameThickness="@dimen/_2sdp"
+                    app:maskColor="@color/whiteColor"
+                    app:maskVisible="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.35"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:padding="@dimen/_2sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/loutVisitorSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@drawable/btn_theme_border_color"
+                    android:orientation="horizontal">
+
+                    <com.brinfotech.feedbacksystem.customClasses.FontsTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|start"
+                        android:paddingLeft="@dimen/common_margin"
+                        android:text="@string/visitor"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/veryLargeTextSize" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="@color/themeColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loutStaffSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_marginTop="@dimen/largeMargin"
+                    android:background="@drawable/btn_theme_border_color"
+                    android:orientation="horizontal">
+
+                    <com.brinfotech.feedbacksystem.customClasses.FontsTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|start"
+                        android:paddingLeft="@dimen/common_margin"
+                        android:text="@string/staff"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/veryLargeTextSize" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="@color/themeColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loutSignOut"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="95dp"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@drawable/btn_sign_out_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.brinfotech.feedbacksystem.customClasses.FontsTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|start"
+                        android:paddingLeft="@dimen/common_margin"
+                        android:text="@string/sign_out"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/regularTextSize" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="@color/whiteColor" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/common_footer" />
+
+    <com.brinfotech.feedbacksystem.customClasses.FontsTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin"
+        android:gravity="center_vertical|center"
+        android:text="@string/login_bottom_title"
+        android:textColor="#929292"
+        android:textSize="@dimen/smallTextSize"
+        android:visibility="gone" />
+
+
+</LinearLayout>
