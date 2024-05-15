@@ -81,8 +81,9 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     private void showDate() {
         if (txtDate != null) {
             String date = DateTimeUtils.getCurrentDate(getActivity());
-            String displayDate= DateTimeUtils.getDesiredDateTime(date,"dd/MM/yyyy","EEEE dd MMM YYYY");
+            String displayDate = DateTimeUtils.getDesiredDateTime(date, "dd/MM/yyyy", "EEEE dd MMM YYYY");
             txtDate.setText(displayDate);
+
         }
     }
 
@@ -93,6 +94,8 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
                 if (txtTime != null) {
                     txtTime.setText(String.format("%s", DateTimeUtils.getCurrentTime(getContext())));
                 }
+
+                showDate();
             }
 
             public void onFinish() {

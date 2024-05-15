@@ -11,6 +11,7 @@ import java.util.Locale;
 
 public class DateTimeUtils {
 
+
     public static String getCurrentDate(Context context) {
         Calendar c = Calendar.getInstance();
         SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
