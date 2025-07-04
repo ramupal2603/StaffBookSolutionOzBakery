@@ -19,7 +19,7 @@ public class WebApiHelper {
     public static final String STATUS_SIGNED_OUT = "2";
 
     //SITE
-    public static final String COMPANY_ID = "1";
+    public static final String COMPANY_ID = "2";
 
 
     //Constant
@@ -27,7 +27,7 @@ public class WebApiHelper {
 
 
     //BaseUrl of LIVE Environment
-    public static String BASE_URL = "https://konnectico.co.uk/Staffbooks-Development/Webservice/";
+    public static String BASE_URL = "https://staffbooks.co.uk/app/Webservice/";
 
     //BaseUrl of Test Environment
 //    public static String BASE_URL = "http://advertico.co.uk/Staffbooks/app/Webservice/";
