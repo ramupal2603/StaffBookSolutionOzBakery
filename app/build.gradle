@@ -5,7 +5,7 @@ def config = rootProject.extensions.getByName("ext") // Create variable to acces
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.adverticoLTD.estaffsolAdvertico"
+        applicationId "com.adverticoLTD.estaffsolGrayStone"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
