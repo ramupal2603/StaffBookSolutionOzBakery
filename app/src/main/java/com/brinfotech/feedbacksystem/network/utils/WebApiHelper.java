@@ -19,7 +19,7 @@ public class WebApiHelper {
     public static final String STATUS_SIGNED_OUT = "2";
 
     //SITE
-    public static final String COMPANY_ID = "35";
+    public static final String COMPANY_ID = "36";
 
 
     //Constant
